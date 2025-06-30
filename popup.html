@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clipboard Templates</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Clipboard Templates</h1>
+    
+    <div id="template-form">
+      <input 
+        type="text" 
+        id="template-title" 
+        placeholder="Template title" 
+        required
+      >
+      <textarea 
+        id="template-content" 
+        placeholder="Enter your template text here..." 
+        rows="4"
+        required
+      ></textarea>
+      <button id="save-btn">Save Template</button>
+    </div>
+    
+    <div id="templates-container">
+      <h2>Saved Templates</h2>
+      <div id="templates-list">
+        <!-- Templates will appear here dynamically -->
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
